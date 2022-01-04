@@ -58,7 +58,11 @@ function computeTurn(player, computer){
 }
 
 function game(){
+    let log = document.getElementById('log');
     for (let i = 0; i < 5; i++){
-        console.log(computeTurn(getUserTurn(), computerPlay()));
+        tag = document.createElement('p');
+        text = document.createTextNode(computeTurn(getUserTurn(), computerPlay()))
+        tag.appendChild(text);
+        log.appendChild(tag);
     }
 }
