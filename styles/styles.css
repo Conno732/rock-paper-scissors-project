@@ -1,0 +1,94 @@
+/*#051e3e • #251e3e • #451e3e • #651e3e • #851e3e*/
+html {
+  display: flex;
+  height: 100%;
+  flex: 1;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #651e3e;
+}
+body {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+#page {
+  flex-direction: column;
+  align-items: center;
+  background-color: #651e3e;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 0px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#score {
+  background-color: #1d2836;
+  width: 100%;
+  font-size: 5em;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding: 16px;
+}
+
+.actionScene {
+  padding: 32px;
+  background-color: violet;
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+.widthlimiter {
+  display: flex;
+  flex-grow: 0;
+  align-content: center;
+  justify-content: space-between;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.Choice {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background-color: #851e3e;
+  flex-shrink: 0;
+  border-style: solid;
+  border-radius: 3px;
+  padding: 8px;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+#actionText {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bottomContent {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border-radius: 12px;
+  background-color: #3f0635;
+  border-style: solid;
+  border-width: 6px;
+  padding: 32px;
+  font-size: 32px;
+  color: white;
+}

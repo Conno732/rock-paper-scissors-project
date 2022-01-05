@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rock Paper Scissors</title>
-        <script src="https://conno732.github.io/rock-paper-scissors-project/scripts/index.js"></script>
-    </head>
-    <body>
-        <button onclick="game()">Click here</button>
-        <div id="log"></div>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./scripts/index.js" defer></script>
+  </head>
+  <body>
+    <div id="page">
+      <div id="score">0 - 0</div>
+      <div class="actionScene">
+        <div class="widthlimiter">
+          <div width="150" height="150" class="Choice">
+            <img
+              style="visibility: hidden"
+              id="playerPic"
+              width="150"
+              height="150"
+            />
+          </div>
+          <div id="actionText">Choose your attack.</div>
+          <div width="150" height="150" class="Choice" id="compPic">
+            <img
+              style="visibility: hidden"
+              id="computerPic"
+              width="150"
+              height="150"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="choices">
+        <div id="Rock" class="Choice">
+          <img src="./imgs/rock.png" width="150" height="150" />
+        </div>
+        <div id="Paper" class="Choice">
+          <img src="./imgs/paper.png" width="150" height="150" />
+        </div>
+        <div id="Scissors" class="Choice">
+          <img src="./imgs/scissors.png" width="150" height="150" />
+        </div>
+      </div>
+      <div class="bottomContent">
+        <div id="Reset"><button>Click here to reset</button></div>
+      </div>
+    </div>
+  </body>
 </html>
